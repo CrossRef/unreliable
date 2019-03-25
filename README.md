@@ -32,3 +32,7 @@ http://unreliable.labs.crossref.org/docs
 or
 
 `docker-compose up -d`
+
+or
+
+`docker stack deploy -c docker-compose.yml unreliable_server`
