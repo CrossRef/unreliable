@@ -16,3 +16,7 @@ It exposes four routes:
 It is normally running at:
 
 http://unreliable.labs.crossref.org/
+
+See OpenAPI docs at:
+
+http://unreliable.labs.crossref.org/docs
