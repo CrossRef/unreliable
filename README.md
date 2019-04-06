@@ -36,3 +36,11 @@ or
 or
 
 `docker stack deploy -c docker-compose.yml unreliable_server`
+
+In latter case, to stop again:
+
+`docker service ls`
+
+(look for image_id)
+
+`docker service rm <image_id>`

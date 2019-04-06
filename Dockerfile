@@ -20,5 +20,9 @@ COPY . $APP_HOME
 # Make port 80 available to the world outside this container
 EXPOSE 80
 
+# Setup directory for prometheus metrics
+RUN rm -rf multiproc-tmp && mkdir multiproc-tmp
+ENV prometheus_multiproc_dir=multiproc-tmp
+
 # run app
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
+CMD ["uvicorn", "main:app","--workers","4", "--host", "0.0.0.0", "--port", "80"]
