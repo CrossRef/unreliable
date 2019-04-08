@@ -39,8 +39,13 @@ or
 
 In latter case, to stop again:
 
+`docker stack rm unreliable`
+
+To see ids
+
 `docker service ls`
 
 (look for image_id)
 
-`docker service rm <image_id>`
+
+
